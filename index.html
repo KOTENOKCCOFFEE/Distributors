@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дистрибьюторы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-container">
+  <div class="header-container">
+    <div class="header">
+      <h1 class="header-title">С нами выгодно работать:<br>обучаем, помогаем продавать</h1>
+      <div class="subtext">Специальные оптовые цены для партнеров</div>
+    </div>
+  </div>
+
+  <div class="features-container">
+    <section class="features">
+      <h2 class="section-title">Вы получаете</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="features-grid">
+              <div class="card">
+                <div class="number">1</div>
+                <h3 class="title">Преимущество</h3>
+                <p class="description">Эксклюзивный прайс, особые условия, гибкая бонусная система</p>
+              </div>
+              <div class="card">
+                <div class="number">2</div>
+                <h3 class="title">Рост</h3>
+                <p class="description">Поток клиентов, поднимите продажи своих услуг, увеличите доход</p>
+              </div>
+              <div class="card">
+                <div class="number">3</div>
+                <h3 class="title">Качество</h3>
+                <p class="description">Легитимную продукцию со всеми документами</p>
+              </div>
+              <div class="card">
+                <div class="number">4</div>
+                <h3 class="title">Поддержку</h3>
+                <p class="description">Юридическую и профессиональную поддержку</p>
+              </div>
+              <div class="card">
+                <div class="number">5</div>
+                <h3 class="title">База знаний</h3>
+                <p class="description">Инвайт на оффлайн и онлайн-мероприятия</p>
+              </div>
+              <div class="card">
+                <div class="number">6</div>
+                <h3 class="title">Сопровождение</h3>
+                <p class="description">Информационное сопровождение</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="add-card-section">
+      <form id="add-card-form" novalidate>
+        <h2>Добавить карточку</h2>
+        <div class="form-group">
+          <label for="card-title">Название карточки</label>
+          <input type="text" id="card-title" placeholder="Название" />
+        </div>
+        <div class="form-group">
+          <label for="card-description">Описание</label>
+          <textarea id="card-description" placeholder="Текст" style="resize: none;"></textarea>
+        </div>
+        <button type="submit">Добавить</button>
+        <button type="button" id="clear-cards" style="margin-top: 1rem;">Удалить все добавленные блоки</button>
+      </form>
+    </section>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/slide.js"></script>
+</body>
+</html>

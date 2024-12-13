@@ -1,0 +1,334 @@
+/* Базовые настройки */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Onest', sans-serif;
+  background: #F8F9FA;
+  overflow-x: hidden;
+}
+
+/* Основной контейнер */
+.page-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Раздел верхнего баннера */
+.header-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 72.5rem;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 34.375rem;
+  background: linear-gradient(0deg, rgba(33, 37, 41, 0.3), rgba(33, 37, 41, 0.3)),
+  url('../img/banner-image.png') center/cover no-repeat;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.header-title {
+  max-width: 51.25rem;
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 110%;
+  color: #ffffff;
+}
+
+.subtext {
+  max-width: 23.075rem;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  line-height: 110%;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Слайдер */
+.swiper-container {
+  max-width: 72.5rem;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* Стрелки навигации */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #212529;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: -2rem;
+}
+
+.swiper-button-next {
+  right: -2rem;
+}
+
+@media (max-width: 40rem) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    bottom: 10px;
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #adb5bd;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #212529;
+  }
+}
+
+/* Раздел карточек */
+.features-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 72.5rem;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 3.125rem;
+  color: #212529;
+  margin-bottom: 2rem;
+  text-align: left;
+  line-height: 110%;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 18.75rem;
+  height: 15rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card .number {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #adb5bd;
+}
+
+.card .title {
+  margin-top: 2.5rem;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  line-height: 1.5rem;
+  color: #212529;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #212529;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/* Форма добавления карточек */
+.add-card-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#add-card-form {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add-card-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+button {
+  width: calc(100% - 2rem);
+  padding: 0.75rem;
+  margin: 0 auto 0.5rem;
+  border: 1px solid #adb5bd;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: #212529;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #495057;
+}
+
+@media (max-width: 40rem) {
+  html {
+    font-size: 14px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    height: 15rem;
+  }
+
+  .card .description {
+    -webkit-line-clamp: 5;
+  }
+
+  #add-card-form {
+    width: 90%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 20rem) {
+  html {
+    font-size: 12px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding-right: 1rem;
+  }
+
+  .card {
+    width: 95%;
+    height: 15rem;
+  }
+
+  #add-card-form {
+    width: 95%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+#clear-cards {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#clear-cards:hover {
+  background: #c82333;
+}
